@@ -1,20 +1,14 @@
 {
   "name": "metamask-graph-ts",
   "version": "1.0.0",
-  "description": "MetaMask authentication and transaction retrieval using The Graph with TypeScript.",
-  "main": "dist/app.js",
   "scripts": {
     "build": "tsc",
     "start": "live-server"
   },
   "dependencies": {
-    "ethers": "^5.7.0",
-    "graphql": "^15.5.1"
+    "ethers": "^5.0.0"
   },
   "devDependencies": {
-    "typescript": "^4.3.5",
-    "live-server": "^1.2.1"
-  },
-  "author": "Your Name",
-  "license": "ISC"
+    "typescript": "^4.0.0"
+  }
 }
