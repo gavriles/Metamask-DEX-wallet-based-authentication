@@ -1,38 +1,19 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  text-align: center;
-  margin: 20px;
-}
-
-.container {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    padding: 20px;
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  border: none;
-  color: white;
-  cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
 }
 
-#transactionHistory {
-  margin-top: 20px;
+#transactionDisplay {
+    margin-top: 20px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #eaeaea;
-  border-radius: 5px;
+.transaction {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
 }
