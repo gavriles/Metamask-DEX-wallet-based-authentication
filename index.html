@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MetaMask Auth with The Graph</title>
-  <link rel="stylesheet" href="./css/styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
-  <script src="./js/metamask.js" defer></script>
-  <script src="./js/graph.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MetaMask Authentication with The Graph</title>
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-  <h1>Authenticate with MetaMask</h1>
-  <button id="connectButton">Connect MetaMask</button>
-  <p id="walletAddress"></p>
+  <div class="container">
+    <h1>MetaMask & The Graph Integration</h1>
+    <button id="connectButton">Connect MetaMask</button>
+    <div id="accountInfo">
+      <p>Ethereum Address: <span id="walletAddress">Not connected</span></p>
+    </div>
+    <div id="transactionHistory">
+      <h2>Transaction History</h2>
+      <ul id="transactionsList"></ul>
+    </div>
+  </div>
 
-  <h2>Transaction History (from The Graph)</h2>
-  <ul id="transactionList"></ul>
+  <script src="./js/app.js"></script>
 </body>
 </html>
