@@ -1,0 +1,35 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const connectButton = document.getElementById('connectButton');
+  console.log('DOM fully loaded and parsed'); // Убедитесь, что DOM загружен
+
+  connectButton.addEventListener('click', async () => {
+    console.log('Connect button clicked'); // Лог для проверки клика на кнопку
+    if (window.ethereum) {
+      console.log('MetaMask detected'); // Убедитесь, что MetaMask обнаружен
+      try {
+        // Create a Web3 provider
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        console.log('Web3 provider created'); // Убедитесь, что провайдер создан
+
+        // Request accounts from MetaMask
+        await provider.send("eth_requestAccounts", []);
+        console.log('Accounts requested'); // Убедитесь, что аккаунты запрошены
+
+        // Get the signer
+        const signer = provider.getSigner();
+        const address = await signer.getAddress();
+        console.log(`Connected address: ${address}`); // Убедитесь, что адрес получен
+        document.getElementById('walletAddress').innerText = `Connected: ${address}`;
+        
+        // Fetch transaction data from The Graph
+        fetchGraphData(address);
+      } catch (error) {
+        console.error("Error connecting:", error); // Лог ошибок
+        alert('Failed to connect to MetaMask');
+      }
+    } else {
+      console.log('MetaMask is not installed'); // Лог, если MetaMask не установлен
+      alert('MetaMask is not installed!');
+    }
+  });
+});
