@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f9;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f6851b;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e37300;
+}
+
+#walletAddress {
+  margin-top: 20px;
+}
+
+#transactionList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#transactionList li {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
