@@ -29,12 +29,15 @@ This project aims to integrate **MetaMask-based wallet authentication** with **T
 
 ### MetaMask (Ethereum Wallet):
 - Used for wallet-based authentication and interaction with Ethereum blockchain.
+- **MetaMask API**: [MetaMask API Guide](https://metamask.io/)
 
 ### The Graph:
 - Provides the querying infrastructure to retrieve blockchain data using GraphQL.
+- **The Graph API**: [The Graph API Guide](https://thegraph.com/docs/graphql-api)
 
 ### Ethers.js:
 - JavaScript library used to interact with the Ethereum blockchain through MetaMask.
+- **Ethers.js Documentation**: [Ethers.js Documentation](https://docs.ethers.io/v5/)
 
 ## File Structure
 
