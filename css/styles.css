@@ -1,38 +1,38 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
   margin: 20px;
-  background-color: #f4f4f9;
 }
 
-h1, h2 {
-  color: #333;
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 button {
   padding: 10px 20px;
-  background-color: #f6851b;
+  background-color: #007bff;
   border: none;
   color: white;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #e37300;
-}
-
-#walletAddress {
+#transactionHistory {
   margin-top: 20px;
 }
 
-#transactionList {
+ul {
   list-style-type: none;
   padding: 0;
 }
 
-#transactionList li {
-  background-color: #fff;
-  margin-bottom: 10px;
+li {
+  margin: 10px 0;
   padding: 10px;
+  background-color: #eaeaea;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
